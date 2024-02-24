@@ -20,7 +20,8 @@ local players = {}
 
 -- Get Dealers
 QBCore.Functions.CreateCallback('test:getdealers', function(_, cb)
-    cb(exports['qb-drugs']:GetDealers())
+    -- cb(exports['qb-drugs']:GetDealers())
+    cb(exports['md-drugs']:GetDealers()) -- md-drugs
 end)
 
 -- Get Players
